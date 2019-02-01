@@ -1,0 +1,23 @@
+.project-item {
+  position: absolute;
+  width: 70%;
+  left: 27%;
+  top: 1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .project-item img {
+    width: 50vw; }
+  .project-item .project-links {
+    display: flex;
+    flex-direction: row; }
+    .project-item .project-links a {
+      margin: 5px; }
+
+@media screen and (max-width: 450px) {
+  .project-item {
+    width: 90%;
+    left: 0vw;
+    top: 10vh;
+    padding: 20px; } }

@@ -1,0 +1,59 @@
+@import "base.scss";
+.experience {
+  display: flex;
+  flex-direction: column;
+}
+.job-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid black;
+  font-family: "Tajawal", sans-serif;
+}
+.job-container h3 {
+  text-align: center;
+}
+.job-container.og,
+.skills .og {
+  background-color: $submenu-color;
+  font-family: "Arimo", sans-serif;
+}
+ul.job-projects,
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+.job-projects li {
+  margin: 20px;
+}
+
+.skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 80%;
+  margin: 10px auto;
+  font-family: "Tajawal", sans-serif;
+}
+
+.skills li {
+  margin: 5px;
+  font-size: 1em;
+  align-self: center;
+}
+
+.skills .og {
+  text-align: center;
+  padding: 1px;
+  border-bottom: 2px solid black;
+}
+
+@media only screen and (max-width: 750px) {
+  .skills ul {
+    flex-direction: column;
+  }
+}

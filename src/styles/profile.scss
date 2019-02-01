@@ -1,0 +1,84 @@
+@import "base.scss";
+
+.profile-pic {
+  width: 75%;
+  margin: 20px;
+  float: left;
+  transition: all ease-in 1s;
+  border: transparent 1px solid;
+  transform: scale(1);
+}
+
+.profile-pic:hover {
+  transform: scale(0.9);
+  transition: all ease-in 1s;
+}
+
+.profile {
+  font-family: "Tajawal", sans-serif;
+  display: flex;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+}
+
+.image-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.image-links a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: $primary-color;
+  transition: color 0.5s linear;
+}
+
+.image-links a:hover {
+  cursor: pointer;
+  color: $secondary-color;
+}
+
+.image-container img {
+  align-self: center;
+}
+
+.person {
+  width: 90%;
+}
+
+.person h1 {
+  font-family: "Arimo", sans-serif;
+}
+
+.person p {
+  margin: 1%;
+}
+
+@media only screen and (max-width: 760px) {
+  .profile {
+    display: flex;
+    font-family: "Tajawal", sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-pic {
+    width: 80%;
+  }
+  .person {
+    width: 90%;
+    margin: 0 10%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .profile-pic {
+    width: 85%;
+  }
+}

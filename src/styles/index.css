@@ -1,0 +1,52 @@
+.App {
+  position: absolute;
+  left: 0;
+  width: 100%; }
+
+.profile,
+.projects,
+.experience,
+.blog {
+  position: relative;
+  opacity: 0;
+  animation: fadein 1.5s forwards;
+  top: 7vh;
+  position: relative; }
+
+.projects {
+  top: 9vh; }
+
+.experience {
+  top: 1.5vh;
+  padding-bottom: 10vh; }
+
+.blog {
+  padding-bottom: 10vh; }
+
+/* .button {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  border: 3px $primary-color solid;
+  width: 50px;
+  height: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 100px;
+  background: $secondary-color;
+  font-size: 40px;
+}
+
+.button:active {
+  background-color: $secondary-color;
+  box-shadow: 0 5px #50c5b7;
+  transform: translateY(4px);
+} */
+@keyframes fadein {
+  50% { }
+  100% {
+    opacity: 1; } }
